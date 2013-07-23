@@ -1,7 +1,9 @@
 # iterative:
-numbers = [1,2]
-while numbers.last <= 4000000
-  numbers << numbers[-1] + numbers[-2] if numbers[-1] + numbers[-2] <= 4000000
-end
+numbers = [0,1]
+begin
+  number = numbers[-1] + numbers[-2]
+  numbers << number if number <= 4000000
+end while number <= 4000000
+
 numbers.inject(&:+)
 
