@@ -4,7 +4,3 @@
 
 (reduce + (filter divisable? (range 1001)))
 ;; or (map inc (range 1000)) I guess...
-
-
-(def fivethreesum (lazy-seq(map #(cond ))))
-
